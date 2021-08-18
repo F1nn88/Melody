@@ -16,7 +16,17 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
+@font-face {
+    font-family: "Bebas Neue";
+    src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+      url("../fonts/BebasNeueRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
 .header {
+    display: flex;
     width: 100%;
     height: 56px;
     background: #635854;
@@ -69,7 +79,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     color: #fff;
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     flex: none;
@@ -103,4 +113,88 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.main {
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    width: 1280px;
+    margin: 54px auto;
+}
+
+.house-floor path {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.house-floor path:hover {
+    opacity: 0.6;
+}
+
+.main-selector {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.main-btn {
+    margin: 115px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter-button {
+    background-color: #fff;
+    border: none;
+    transition-duration: 250ms;
+    transition-property: transform;
+}
+
+.counter-button:hover {
+    transform: scale(1.2);
+}
+
+.counter-btn-bd {
+    transform: rotateX(180deg)
+}
+
+.main-title {
+    color: #635854;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 37px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.counter {
+    font-family: "Bebas Neue", sans-serif;
+    color: #635854;
+    margin: 35px 0;
+    font-size: 124px;
+    text-align: center;
+    cursor: default;
+}
+
+.btn-prim {
+    border: none;
+    background-color: #3596F5;
+    padding: 16px 36px;
+    width: 297px;
+    height: 51px;   
+    border-radius: 6px;
+    font-family: Roboto;
+    font-weight: 200;
+    font-style: normal;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-property: background-color,transform;
+}
+
+.btn-prim:hover {
+    background-color: #59a6f3;
+    transform: scale(1.1);
 }
